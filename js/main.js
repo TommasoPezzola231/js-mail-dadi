@@ -6,16 +6,16 @@ let button = document.getElementById("verifica");
 
 let messaggio = document.getElementById("risposta");
 
-let key = "NON è";
-
 button.addEventListener("click",
     function () {
+
+        let key = "NON è";
 
         for (let i = 0; i < email.length; i++) {
 
             let emailUtente = document.getElementById("emailUtente").value;
 
-            let risposta = ""
+            let risposta = "";
         
             if (emailUtente == email [i]) {
                 key = "è"
